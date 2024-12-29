@@ -9,6 +9,8 @@
                 "-g",
                 "${fileDirname}\\main.cpp", // Main file
                 "${fileDirname}\\date.cpp",      // Additional file
+                "${fileDirname}\\client.cpp",      // Additional file
+                "${fileDirname}\\chambre.cpp",      // Additional file
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
