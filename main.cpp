@@ -13,5 +13,9 @@ int main(){
     std::cout<<afficheInfoClient(c)<<std::endl;
     chambre ch(100,"single",100);
     std::cout<<ch.type()<<std::endl;
+    ch.updatePrix(200);
+    std::cout<<ch.prix()<<std::endl;
+    std::cout<<infoChambre(ch)<<std::endl;
+    return 0;
 
 }

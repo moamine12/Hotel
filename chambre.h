@@ -17,4 +17,5 @@ class chambre{
 
 };
 bool estChambre(int num,std::string type,float prix);
+std::string infoChambre(const chambre& ch );
 #endif

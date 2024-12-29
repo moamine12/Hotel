@@ -18,3 +18,9 @@ bool estChambre(int num,std::string type,float prix){
     else if (prix<0) test=false;
     else if (type!="single" && type!="double" &&type!="suite") test=false;
     return test;}
+std::string infoChambre(const chambre& ch ){
+    std::string cha ="le numero de la chambre est " + std::to_string(ch.num()) +"\n"
+    "le type de la chambre est " + ch.type() +"\n"
+    "le prix de la chambre est " +std::to_string(ch.prix());
+    return cha;
+}
