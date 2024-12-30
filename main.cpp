@@ -2,6 +2,8 @@
 #include "date.h"
 #include "client.h"
 #include "chambre.h"
+#include "hotel.h"
+
 int main(){
     date d(20,1,2004);
     std::cout<<toString(d)<<std::endl;
@@ -16,6 +18,8 @@ int main(){
     ch.updatePrix(200);
     std::cout<<ch.prix()<<std::endl;
     std::cout<<infoChambre(ch)<<std::endl;
+    hotel h("hksfbef","dhkgsdkz","dsdjbskdb",[12,3,5]);
+    
     return 0;
 
 }

@@ -24,3 +24,14 @@ std::string infoChambre(const chambre& ch ){
     "le prix de la chambre est " +std::to_string(ch.prix());
     return cha;
 }
+chambre trouveChambre(int num_chambre,std::vector<chambre> tabch){
+    int j=0;
+    for (int i=0 ; i < tabch.size(); i++){
+        if (tabch[i].num()==num_chambre){
+            j=i;
+            return tabch[j];
+        }
+    }
+    throw std::runtime_error("Chambre introuvable");
+    
+}

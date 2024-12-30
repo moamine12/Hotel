@@ -11,11 +11,9 @@ std::string hotel::id() const { return _id; }
 std::string hotel::nom() const { return _nom; }
 std::string hotel::ville() const { return _ville; }
 std::vector<chambre> hotel::tabch() const { return _tabch; }
-
 void hotel::updateId(std::string id) { _id = id; }
 void hotel::updateNom(std::string nom) { _nom = nom; }
 void hotel::updateVille(std::string ville) { _ville = ville; }
-
 void hotel::updateTabch(chambre ch, int i) {
     while (i > _tabch.size() - 1) {
         int j;
